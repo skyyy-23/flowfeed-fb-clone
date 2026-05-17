@@ -5,8 +5,8 @@ import { getApiMessage } from "../utils/formatters";
 
 export default function Login({ onSuccess, onSwitchToRegister }) {
     const [form, setForm] = useState({
-        email: "test@example.com",
-        password: "password",
+        email: "",
+        password: "",
     });
     const [error, setError] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
