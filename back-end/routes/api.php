@@ -30,5 +30,4 @@ Route::prefix('auth')->group(function () {
         Route::post('/upload/photo', [FileUploadController::class, 'uploadPostPhoto']);
 
     });
-
 });

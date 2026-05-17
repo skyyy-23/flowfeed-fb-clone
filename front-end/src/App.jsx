@@ -20,7 +20,7 @@ function AppRoutes({ user, isBooting, onAuthenticated, onLogout }) {
             <div className="flex min-h-screen items-center justify-center px-4">
                 <div className="glass-panel animate-rise w-full max-w-xl rounded-[2rem] p-8 text-center">
                     <p className="mb-3 inline-flex rounded-full bg-[var(--accent-soft)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--accent-strong)]">
-                        Facebook
+                        FlowFeed
                     </p>
                     <h1 className="display-font text-4xl text-[var(--text)]">
                         Loading...
