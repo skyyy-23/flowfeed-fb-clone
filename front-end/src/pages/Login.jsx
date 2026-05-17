@@ -5,8 +5,8 @@ import { getApiMessage } from "../utils/formatters";
 
 export default function Login({ onSuccess, onSwitchToRegister }) {
     const [form, setForm] = useState({
-        email: "",
-        password: "",
+        email: "email@example.com",
+        password: "password123",
     });
     const [error, setError] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +41,7 @@ export default function Login({ onSuccess, onSwitchToRegister }) {
             heroText="Log in to see your feed, share posts, and interact with your friends."
             belowCardText={
                 <>
-                    <p className="">You can create an account by clicking <span className="font-bold">create new account</span></p>
+                    <p className="">Create an account by clicking <span className="font-bold">create new account</span> to login to flowfeed.</p>
                 </>
             }
         >
@@ -80,15 +80,6 @@ export default function Login({ onSuccess, onSwitchToRegister }) {
                     {isSubmitting ? "Logging in..." : "Log in"}
                 </button>
             </form>
-
-            <div className="auth-demo-panel mt-4 px-4 py-3 text-sm text-center">
-                <p className="font-semibold">Demo account</p>
-                <p className="mt-1">
-                    <span className="font-semibold">test@example.com</span>
-                    {" / "}
-                    <span className="font-semibold">password</span>
-                </p>
-            </div>
 
             <div className="auth-divider" />
 
